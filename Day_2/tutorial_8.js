@@ -15,4 +15,11 @@
 //Task 4
 let message;
 let login = prompt("Enter your login");
-message = login == "Employee" ? "Helo" : "Director" ? "Greetings" : "" ? "" : "";
+
+message = 
+  login == "Employee" ? "Hello" :
+  login == "Director" ? "Greetings" :
+  login == "" ? "No login" :
+  "Unknown";
+
+alert(message);
